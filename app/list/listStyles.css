@@ -17,7 +17,7 @@
   font-size: 0.9em;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 750px) {
   .listHeader {
     display: none;
   }

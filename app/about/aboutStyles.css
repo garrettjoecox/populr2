@@ -75,7 +75,7 @@
   color: #4B5086;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 750px) {
 
   .aboutHeader p {
     -webkit-column-count: auto;

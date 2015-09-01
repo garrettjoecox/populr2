@@ -29,7 +29,7 @@ ng-view {
   overflow: auto;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 750px) {
   body {
       flex-flow: column nowrap;
   }
