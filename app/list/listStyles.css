@@ -1,0 +1,18 @@
+
+.listHeader {
+  padding: 2em 3em;
+  background: #FBFBFB;
+  border-bottom: 1px solid #EEE;
+}
+
+.listHeader h1 {
+  margin: 5px 0;
+  font-weight: lighter;
+}
+
+.listHeader p {
+  margin: 0;
+  line-height: 30px;
+  font-weight: lighter;
+  font-size: 0.9em;
+}

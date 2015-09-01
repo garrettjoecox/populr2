@@ -1,0 +1,30 @@
+
+html, body {
+  font-family: proxima-nova, sans-serif;
+  text-rendering: geometricPrecision;
+  padding: 0;
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-flow: row nowrap;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+ng-sidebar {
+  flex: 0 0 175px;
+  max-height: 100vh;
+  min-height: 100vh;
+  background: #4B5086;
+}
+
+ng-view {
+  flex: 1;
+  max-height: 100vh;
+  min-height: 100vh;
+  overflow: auto;
+}

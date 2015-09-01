@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="app/about/aboutStyles.css">
+<div ng-controller="aboutController as about">
+  <div class="aboutHeader">
+    <h3>ABOUT</h3>
+    <p>The internet is one big popularity contest, and it’s rarely clear who’s winning. Across the board, many celebrity news sites seem to employ ambiguous criteria for determining who’s on top. In contrast, Populr harnesses the power of ‘Big Data’ to mathematically rank the top influencers of the internet. We’ve engineered our algorithms to combine social API metrics, online news media presence, and informative data visualizations to rank celebrities while delivering a clean and enjoyable user experience. With a collective interest in data science and the technical challenges that go with it, the Populr team set out to build a product that delivers value regardless of the size of its user base.</p>
+  </div>
+  <div class="aboutBody">
+    <h3>THE TEAM</h3>
+    <div class="aboutCards">
+      <div ng-repeat="person in about.team" class="aboutCard">
+        <div class="aboutCardTop" style="background-image:url('{{person.bg}}');"></div>
+        <div class="aboutCardBottom">
+          <div class="aboutCardName">{{person.name}}</div>
+          <div class="aboutCardRole">{{person.role}}</div>
+          <div class="aboutCardLinks">
+            <a href="{{person.github}}"><i class="fa fa-github-alt"></i></a>
+            <a href="{{person.linkedin}}"><i class="fa fa-linkedin"></i></a>
+            <a href="{{person.angellist}}"><i class="fa fa-angellist"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+
+.aboutHeader {
+  padding: 2em 3em;
+  background: #FBFBFB;
+  border-bottom: 1px solid #EEE;
+}
+
+.aboutHeader h3 {
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 5px 0 15px;
+  font-weight: normal;
+}
+
+.aboutHeader p {
+  text-align: justify;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 2em;
+  margin: 0;
+  line-height: 30px;
+  font-weight: lighter;
+  font-size: 0.9em;
+}
+
+.aboutBody h3 {
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 30px;
+  font-weight: normal;
+}
+
+.aboutCards {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 2em;
+}
+
+.aboutCard {
+  display: flex;
+  flex-flow: column;
+  flex: 1 0 275px;
+  margin: 8px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.aboutCardTop {
+  border-radius: 8px 8px 0 0;
+  flex: 100px;
+  background-size: contain;
+}
+
+.aboutCardBottom {
+  padding: 1em;
+  text-align: center;
+  flex: 1;
+}
+
+.aboutCardName {
+  font-size: 1.2em;
+}
+
+.aboutCardRole {
+  font-weight: lighter;
+  color: #777;
+}
+
+.aboutCardLinks {
+  margin-top: 10px;
+  font-size: 1.3em;
+  letter-spacing: 0.4em;
+}
+
+.aboutCardLinks a {
+  color: #4B5086;
+}
