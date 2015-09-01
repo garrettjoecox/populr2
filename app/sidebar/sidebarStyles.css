@@ -49,7 +49,10 @@ ng-sidebar > div {
   padding: 1.5em;
 }
 
-@media (max-width: 750px) {
+@media only screen
+    and (max-device-width: 640px),
+    only screen and (max-device-width: 667px),
+    only screen and (max-width: 480px) {
 
   .sidebarHeader {
     padding: 1em;

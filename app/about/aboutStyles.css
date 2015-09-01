@@ -75,7 +75,10 @@
   color: #4B5086;
 }
 
-@media (max-width: 750px) {
+@media only screen
+    and (max-device-width: 640px),
+    only screen and (max-device-width: 667px),
+    only screen and (max-width: 480px) {
 
   .aboutHeader p {
     -webkit-column-count: auto;
