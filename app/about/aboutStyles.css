@@ -74,3 +74,12 @@
 .aboutCardLinks a {
   color: #4B5086;
 }
+
+@media (max-width: 720px) {
+
+  .aboutHeader p {
+    -webkit-column-count: auto;
+    -webkit-column-gap: 2em;
+  }
+
+}

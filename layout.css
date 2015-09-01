@@ -28,3 +28,29 @@ ng-view {
   min-height: 100vh;
   overflow: auto;
 }
+
+@media (max-width: 720px) {
+  body {
+      flex-flow: column nowrap;
+  }
+
+  ng-sidebar {
+    flex: 0 0 50px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+
+  ng-sidebar *{
+    display: none;
+  }
+
+  ng-sidebar .sidebarHeader {
+    display: block;
+  }
+
+  ng-view {
+    max-height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
+  }
+
+}

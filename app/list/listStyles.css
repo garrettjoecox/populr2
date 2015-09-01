@@ -16,3 +16,23 @@
   font-weight: lighter;
   font-size: 0.9em;
 }
+
+@media (max-width: 720px) {
+  .listHeader {
+    display: none;
+  }
+}
+
+.listContainer {
+  padding: 1em 3em;
+}
+
+.innerListHeader {
+  border-bottom: 1px solid #EEE;
+}
+
+.innerListHeader h4{
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
