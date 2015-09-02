@@ -16,7 +16,7 @@ body {
 }
 
 ng-sidebar {
-  flex: 0 0 175px;
+  flex: 0 0 11em;
   max-height: 100vh;
   min-height: 100vh;
   background: #4B5086;
@@ -26,34 +26,30 @@ ng-view {
   flex: 1;
   max-height: 100vh;
   min-height: 100vh;
-  overflow: auto;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
-@media only screen
-    and (max-device-width: 640px),
-    only screen and (max-device-width: 667px),
-    only screen and (max-width: 480px) {
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
+
   body {
       flex-flow: column nowrap;
+      font-size: 3em;
   }
 
   ng-sidebar {
-    flex: 0 0 50px;
-    min-height: 50px;
-    max-height: 50px;
+    flex: 0 0 4em;
+    min-height: 4em;
+    max-height: 4em;
   }
 
   ng-sidebar *{
     display: none;
   }
 
-  ng-sidebar .sidebarHeader {
-    display: block;
-  }
-
   ng-view {
-    max-height: calc(100vh - 50px);
-    min-height: calc(100vh - 50px);
+    max-height: calc(100vh - 4em);
+    min-height: calc(100vh - 4em);
   }
 
 }
