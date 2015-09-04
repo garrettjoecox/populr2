@@ -6,13 +6,35 @@
 }
 
 .listHeader h1 {
-  margin: 5px 0;
+  margin: 0;
   font-weight: lighter;
 }
 
 .listHeader p {
   margin: 0;
-  line-height: 30px;
+  line-height: 2em;
   font-weight: lighter;
   font-size: 0.9em;
+}
+
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
+
+  .listHeader {
+    display: none;
+  }
+
+}
+
+.listContainer {
+  padding: 1em 3em;
+}
+
+.innerListHeader {
+  border-bottom: 1px solid #EEE;
+}
+
+.innerListHeader h4{
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: 0.1em;
 }

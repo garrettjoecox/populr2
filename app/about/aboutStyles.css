@@ -7,8 +7,8 @@
 
 .aboutHeader h3 {
   text-align: center;
-  letter-spacing: 3px;
-  margin: 5px 0 15px;
+  letter-spacing: 0.1em;
+  margin: 0 0 1em;
   font-weight: normal;
 }
 
@@ -17,15 +17,15 @@
   -webkit-column-count: 2;
   -webkit-column-gap: 2em;
   margin: 0;
-  line-height: 30px;
+  line-height: 2em;
   font-weight: lighter;
   font-size: 0.9em;
 }
 
 .aboutBody h3 {
   text-align: center;
-  letter-spacing: 3px;
-  margin: 30px;
+  letter-spacing: 0.1em;
+  margin: 1.5em 0 1em 0;
   font-weight: normal;
 }
 
@@ -38,15 +38,15 @@
 .aboutCard {
   display: flex;
   flex-flow: column;
-  flex: 1 0 275px;
-  margin: 8px;
-  border-radius: 8px;
+  flex: 1 0 10em;
+  margin: 0.5em;
+  border-radius: 0.5em;
   border: 1px solid #eee;
 }
 
 .aboutCardTop {
-  border-radius: 8px 8px 0 0;
-  flex: 100px;
+  border-radius: 0.5em 0.5em 0 0;
+  flex: 12em;
   background-size: contain;
 }
 
@@ -66,11 +66,20 @@
 }
 
 .aboutCardLinks {
-  margin-top: 10px;
+  margin-top: 0.3em;
   font-size: 1.3em;
   letter-spacing: 0.4em;
 }
 
 .aboutCardLinks a {
   color: #4B5086;
+}
+
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
+
+  .aboutHeader p {
+    -webkit-column-count: auto;
+    -webkit-column-gap: 2em;
+  }
+
 }
