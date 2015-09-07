@@ -10,7 +10,8 @@
         <h4>{{letter | listify}}</h4>
       </div>
       <div ng-repeat="person in people" class="listItem">
-        {{person.fullName}}
+        <span>{{person.rank}}</span>
+        <a href="#/people/{{person.fullName}}">{{person.fullName}}</a>
       </div>
     </div>
   </div>

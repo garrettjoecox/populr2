@@ -1,4 +1,10 @@
 <link rel="stylesheet" href="app/people/peopleStyles.css">
 <div ng-controller="peopleController as people">
-  People
+  <img src="{{people.data.twitter.profilePic}}"/>
+  <img src="{{people.data.twitter.backgroundPic}}"/>
+  <div>{{people.data.top.rank}}</div>
+  <div>{{people.data.fullName}}</div>
+  <div>{{people.data.context.dob}}</div>
+  <div>{{people.data.context.occupation}}</div>
+  <div>{{people.data.context.description}}</div>
 </div>
