@@ -1,0 +1,10 @@
+<div ng-controller="uiSidebarC as uiSidebarC" class="f1 col">
+  <a href="#/" class="logo">populr</a>
+  <a href="#/?list=a" class="list-item" ng-class="{active: uiSidebarC.stateParams.list === 'a' || (uiSidebarC.state.current.name === 'home' && !uiSidebarC.stateParams.list)}">a-list</a>
+  <a href="#/?list=b" class="list-item" ng-class="{active: uiSidebarC.stateParams.list === 'b'}">b-list</a>
+  <a href="#/?list=c" class="list-item" ng-class="{active: uiSidebarC.stateParams.list === 'c'}">c-list</a>
+  <a href="#/?list=d" class="list-item" ng-class="{active: uiSidebarC.stateParams.list === 'd'}">d-list</a>
+  <div class="f1"></div>
+  <a class="list-item" ng-class="{active: uiSidebarC.state.current.name === 'about'}" href="#/about">about</a>
+  <span class="copy">© 2017 populr.io</span>
+</div>

@@ -1,0 +1,29 @@
+.homeV {
+
+  .jumbotron {
+    background: #F5F5F5;
+    border-bottom: 1px solid #DDD;
+    padding: 2rem 4rem 1rem;
+    box-sizing: border-box;
+    max-width: calc(100vw - 11rem);
+
+    .heading {
+      font-weight: 100;
+      font-size: 1.9rem;
+    }
+
+    p {
+      line-height: 2rem;
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+  }
+
+  .placeholder {
+    font-weight: 100;
+    color: #666;
+    text-align: center;
+    padding: 4rem;
+  }
+
+}

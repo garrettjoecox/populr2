@@ -1,0 +1,14 @@
+{
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "no-use-before-define": "off",
+    "arrow-body-style": "off",
+    "no-param-reassign": "off"
+  },
+  "globals": {
+    "angular": true
+  },
+  "extends": "airbnb-base"
+}
