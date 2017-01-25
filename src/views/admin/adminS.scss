@@ -1,0 +1,68 @@
+.adminV {
+
+  .header {
+    font-size: 2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding: 0.5rem 1rem;
+    font-weight: 300;
+    margin: 1rem;
+    color: #333;
+    margin-bottom: 0;
+
+    .heading {
+      margin-right: auto;
+    }
+
+    .create {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+
+  .list {
+    max-height: calc(100vh - 6rem);
+    overflow: scroll;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    margin: 0 1rem;
+
+    .list-item {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: #333;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      transition: background 250ms ease;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      .img {
+
+        img {
+          max-height: 4rem;
+          max-width: 4rem;
+          border-radius: 100%;
+        }
+      }
+
+      .name {
+        margin-left: 1rem;
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: #333;
+        transition: all 250ms ease;
+      }
+
+      &:hover {
+        background: #F5F5F5;
+
+        .name {
+          color: black;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+}

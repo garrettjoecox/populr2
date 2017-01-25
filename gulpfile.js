@@ -28,14 +28,14 @@ gulp.task('src', ['src:js', 'src:css']);
 gulp.task('src:js', () => {
   return gulp.src(['src/index.js', 'src/**/*.js'])
     .pipe(pl.plumber())
-    .pipe(pl.sourcemaps.init())
+    // .pipe(pl.sourcemaps.init())
     .pipe(pl.babel())
     .pipe(stream.obj(gulp.src('src/**/*.html')
       .pipe(pl.angularTemplatecache({ module: 'populr' }))))
     .pipe(pl.concat('index.js'))
     .pipe(pl.ngAnnotate())
     .pipe(pl.uglify())
-    .pipe(pl.sourcemaps.write('.'))
+    // .pipe(pl.sourcemaps.write('.'))
     .pipe(gulp.dest('dist'))
     .pipe(pl.connect.reload());
 });
@@ -43,12 +43,12 @@ gulp.task('src:js', () => {
 gulp.task('src:css', () => {
   return gulp.src(['src/**/*.scss'])
     .pipe(pl.plumber())
-    .pipe(pl.sourcemaps.init())
+    // .pipe(pl.sourcemaps.init())
     .pipe(pl.concat('index.css'))
     .pipe(pl.sass().on('error', pl.sass.logError))
     .pipe(pl.autoprefixer())
     .pipe(pl.cleanCss())
-    .pipe(pl.sourcemaps.write('.'))
+    // .pipe(pl.sourcemaps.write('.'))
     .pipe(gulp.dest('dist'))
     .pipe(pl.connect.reload());
 });

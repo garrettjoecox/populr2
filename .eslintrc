@@ -5,7 +5,8 @@
   "rules": {
     "no-use-before-define": "off",
     "arrow-body-style": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "no-confusing-arrow": "off"
   },
   "globals": {
     "angular": true
