@@ -8,6 +8,7 @@
     max-width: calc(100vw - 11rem);
 
     .img img {
+      border: 1px solid #4B5086;
       min-width: 6rem;
       min-height: 6rem;
       max-height: 6rem;
@@ -53,7 +54,7 @@
         }
 
         &.delete {
-          background: #e65a5a;
+          background: #E48263;
         }
 
       }

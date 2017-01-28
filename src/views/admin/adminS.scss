@@ -1,7 +1,7 @@
 .adminV {
 
   .header {
-    font-size: 2rem;
+    font-size: 1.2rem;
     border-bottom: 1px solid rgba(0,0,0,0.3);
     padding: 0.5rem 1rem;
     font-weight: 300;
@@ -10,6 +10,8 @@
     margin-bottom: 0;
 
     .heading {
+      font-weight: 400;
+      text-transform: uppercase;
       margin-right: auto;
     }
 
@@ -20,9 +22,8 @@
   }
 
   .list {
-    max-height: calc(100vh - 6rem);
+    max-height: calc(100vh - 3.5rem);
     overflow: scroll;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
     margin: 0 1rem;
 
     .list-item {
@@ -34,13 +35,16 @@
       transition: background 250ms ease;
 
       &:last-of-type {
-        border-bottom: none;
+        // border-bottom: none;
       }
 
       .img {
 
         img {
+          border: 1px solid #4B5086;
+          min-height: 4rem;
           max-height: 4rem;
+          min-width: 4rem;
           max-width: 4rem;
           border-radius: 100%;
         }
@@ -59,7 +63,6 @@
 
         .name {
           color: black;
-          font-weight: 400;
         }
       }
     }

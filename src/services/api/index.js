@@ -4,14 +4,14 @@
     .factory('API', API);
 
   function API($http) {
-    const base = 'http://localhost:9000/api';
+    const base = 'http://localhost:9001';
 
     return {
       request,
       get,
       post,
       put,
-      remove,
+      destroy,
     };
 
     function request(uri, config = {}) {
@@ -42,7 +42,7 @@
       }, config));
     }
 
-    function remove(uri, config = {}) {
+    function destroy(uri, config = {}) {
       return request(uri, Object.assign({
         method: 'DELETE',
       }, config));

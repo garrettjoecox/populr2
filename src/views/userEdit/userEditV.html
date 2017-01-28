@@ -1,14 +1,14 @@
 <div class="f1 userEditV col">
   <div class="jumbotron row jcc">
     <div class="contained f1 row aic">
-      <div class="img row aic jcc"><img ng-src="{{userEditC.user.avatar}}"></div>
+      <div class="img row aic jcc"><img ng-src="{{userEditC.user.info.image}}"></div>
       <div class="meta col">
         <span class="name">{{userEditC.user.displayName}}</span>
-        <span class="occupation">{{userEditC.user.occupation}}</span>
+        <span class="occupation">{{userEditC.user.info.occupation}}</span>
       </div>
       <div class="actions row">
-        <button>Save</button>
-        <button class="delete">Delete</button>
+        <button ng-click="userEditC.save()">Save</button>
+        <button class="delete" ng-click="userEditC.destroy()">Delete</button>
       </div>
     </div>
   </div>
@@ -17,15 +17,15 @@
       <label>Display Name</label>
       <input ng-model="userEditC.user.displayName" type="text">
       <label>Avatar</label>
-      <input ng-model="userEditC.user.avatar" type="text">
+      <input ng-model="userEditC.user.info.image" type="text">
       <label>Occupation</label>
-      <input ng-model="userEditC.user.occupation" type="text">
+      <input ng-model="userEditC.user.info.occupation" type="text">
       <label>Twitter Handle</label>
-      <input ng-model="userEditC.user.twitterHandle" type="text">
+      <input ng-model="userEditC.user.twitter.handle" type="text">
       <label>Wikipedia Link</label>
-      <input ng-model="userEditC.user.wikiLink" type="text">
+      <input ng-model="userEditC.user.info.wikiUrl" type="text">
       <label>News Query</label>
-      <input ng-model="userEditC.user.newsQuery" type="text">
+      <input ng-model="userEditC.user.news.queries" type="text">
     </div>
   </div>
 </div>
