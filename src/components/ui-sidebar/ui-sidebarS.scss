@@ -1,7 +1,11 @@
 ui-sidebar {
   background: #4B5086;
-  flex: 0 0 11rem;
   color: #FFF;
+
+  flex: 0 0 4rem;
+  @include breakpoint(phablet) {
+    flex: 0 0 11rem;
+  }
 
   .logo {
     color: #FFF;
@@ -10,8 +14,13 @@ ui-sidebar {
     font-weight: 600;
     letter-spacing: 0.3rem;
     font-size: 0.9rem;
-    padding: 2rem 0;
     text-align: center;
+    outline: none;
+
+    padding: 1.5rem 0;
+    @include breakpoint(phablet) {
+      padding: 2rem 0;
+    }
   }
 
   .list-item {
@@ -26,7 +35,8 @@ ui-sidebar {
     cursor: pointer;
     transition: all 100ms ease;
 
-    &.active, &:hover {
+    &.active, &:hover, &:focus {
+      outline: none;
       color: #FFF;
       background: rgba(0,0,0,0.1);
     }
@@ -44,5 +54,12 @@ ui-sidebar {
     font-size: 0.6rem;
     padding: 0.8rem 0;
     text-transform: uppercase;
+  }
+
+  .list-item, .copy {
+    display: none;
+    @include breakpoint(phablet) {
+      display: block;
+    }
   }
 }

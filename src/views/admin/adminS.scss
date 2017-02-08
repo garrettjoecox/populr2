@@ -10,9 +10,10 @@
     margin-bottom: 0;
 
     .heading {
+      border: 0;
+      width: 100%;
       font-weight: 400;
-      text-transform: uppercase;
-      margin-right: auto;
+      outline: none;
     }
 
     .create {
@@ -22,9 +23,19 @@
   }
 
   .list {
-    max-height: calc(100vh - 3.5rem);
     overflow: scroll;
     margin: 0 1rem;
+
+    max-height: calc(100vh - 7.5rem);
+    @include breakpoint(phablet) {
+      max-height: calc(100vh - 3.5rem);
+    }
+
+    .placeholder {
+      padding: 2rem;
+      font-weight: 100;
+      color: #666;
+    }
 
     .list-item {
       margin: 0 0.5rem;
@@ -34,19 +45,31 @@
       border-bottom: 1px solid rgba(0,0,0,0.1);
       transition: background 250ms ease;
 
-      &:last-of-type {
-        // border-bottom: none;
-      }
-
       .img {
+        position: relative;
+        border: 1px solid #4B5086;
+        min-height: 4rem;
+        max-height: 4rem;
+        min-width: 4rem;
+        max-width: 4rem;
+        border-radius: 100%;
+        background-position: center;
+        background-size: cover;
 
-        img {
+        .position {
+          position: absolute;
+          background: rgba(255,255,255,0.8);
           border: 1px solid #4B5086;
-          min-height: 4rem;
-          max-height: 4rem;
-          min-width: 4rem;
-          max-width: 4rem;
           border-radius: 100%;
+          min-width: 1.2rem;
+          max-width: 1.2rem;
+          max-height: 1.2rem;
+          min-height: 1.2rem;
+          bottom: 0;
+          right: 0;
+          font-weight: 100;
+          font-size: 0.9rem;
+          color: #4B5086;
         }
       }
 

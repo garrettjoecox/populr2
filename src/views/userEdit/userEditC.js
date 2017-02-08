@@ -14,6 +14,7 @@
             image: user.info.image,
             occupation: user.info.occupation,
             wikiUrl: user.info.wikiUrl,
+            bio: user.info.bio,
           },
           twitter: {
             id: user.twitter.id,

@@ -1,3 +1,4 @@
+@import 'components/breakpoints';
 
 body {
   min-height: 100vh;
@@ -7,6 +8,12 @@ body {
   overflow: hidden;
   user-select: none;
   cursor: default;
+
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(phablet) {
+    flex-direction: row;
+  }
 }
 
 .row {
@@ -37,4 +44,8 @@ ui-view {
 
 .contained {
   max-width: 50rem;
+}
+
+::selection {
+  background: #fda88e;
 }

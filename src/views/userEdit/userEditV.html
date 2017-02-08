@@ -1,7 +1,7 @@
-<div class="f1 userEditV col">
+<div class="f1 userEditV">
   <div class="jumbotron row jcc">
     <div class="contained f1 row aic">
-      <div class="img row aic jcc"><img ng-src="{{userEditC.user.info.image}}"></div>
+      <div class="img" style="background-image: url({{userEditC.user.info.image}})"></div>
       <div class="meta col">
         <span class="name">{{userEditC.user.displayName}}</span>
         <span class="occupation">{{userEditC.user.info.occupation}}</span>
@@ -12,7 +12,7 @@
       </div>
     </div>
   </div>
-  <div class="f1 row jcc">
+  <div class="row jcc">
     <div class="form contained f1 col">
       <label>Display Name</label>
       <input ng-model="userEditC.user.displayName" type="text">
@@ -26,6 +26,8 @@
       <input ng-model="userEditC.user.info.wikiUrl" type="text">
       <label>News Query</label>
       <input ng-model="userEditC.user.news.queries" type="text">
+      <label>Bio</label>
+      <textarea ng-model="userEditC.user.info.bio"></textarea>
     </div>
   </div>
 </div>

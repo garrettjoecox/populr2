@@ -1,14 +1,17 @@
 <div class="f1 adminV row jcc">
   <div class="f1 contained col">
     <div class="header row">
-      <span class="heading">All Users</span>
+      <input ng-model="adminC.search" class="heading" placeholder="Search Users...">
       <a class="create" href="#/admin/create">+</a>
     </div>
     <div class="list f1">
-      <a href="#/admin/{{user.id}}" ng-repeat="user in adminC.users track by $index" class="list-item row aic">
-        <div class="img col aic jcc"><img ng-src="{{user.info.image}}"></div>
+      <a href="#/admin/{{user.id}}" ng-repeat="user in adminC.filtered = (adminC.users | filter:adminC.search)" class="list-item row aic">
+        <div class="img" style="background-image: url({{user.info.image}})">
+          <span class="position row aic jcc">{{user.position}}</span>
+        </div>
         <span class="name">{{user.displayName}}</span>
       </a>
+      <span class="placeholder row jcc" ng-if="!adminC.filtered.length">No Users</span>
     </div>
   </div>
 </div>
