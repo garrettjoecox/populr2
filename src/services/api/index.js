@@ -4,7 +4,7 @@
     .factory('API', API);
 
   function API($http) {
-    const base = 'http://mc.garrett.io:9001';
+    const base = 'http://mc.garrettcox.io:9001';
 
     return {
       request,
