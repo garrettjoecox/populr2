@@ -1,4 +1,9 @@
 .homeV {
+  overflow: auto;
+  max-height: calc(100vh - 4rem);
+  @include breakpoint(phablet) {
+    max-height: 100vh;
+  }
 
   .jumbotron {
     background: #F5F5F5;
@@ -29,6 +34,93 @@
     color: #666;
     text-align: center;
     padding: 4rem;
+  }
+
+  .list {
+    margin: 0 1rem;
+
+    .header {
+      letter-spacing: 2px;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      font-size: 0.9rem;
+      padding: 1rem 0.5rem;
+      text-transform: uppercase;
+      color: #333;
+      align-items: baseline;
+      font-weight: 400;
+
+      .since {
+        letter-spacing: normal;
+        text-transform: none;
+        color: #AAA;
+        margin-left: auto;
+        font-size: 0.7rem;
+        text-align: right;
+      }
+    }
+
+    .placeholder {
+      padding: 2rem;
+      font-weight: 100;
+      color: #666;
+    }
+
+    .list-item {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: #333;
+      // border-bottom: 1px solid rgba(0,0,0,0.1);
+      transition: background 250ms ease;
+
+      .img {
+        position: relative;
+        border: 1px solid #4B5086;
+        min-height: 4rem;
+        max-height: 4rem;
+        min-width: 4rem;
+        max-width: 4rem;
+        border-radius: 100%;
+        background-position: center;
+        background-size: cover;
+
+        .position {
+          position: absolute;
+          background: rgba(255,255,255,0.8);
+          border: 1px solid #4B5086;
+          border-radius: 100%;
+          min-width: 1.2rem;
+          max-width: 1.2rem;
+          max-height: 1.2rem;
+          min-height: 1.2rem;
+          bottom: 0;
+          right: 0;
+          font-weight: 100;
+          font-size: 0.9rem;
+          color: #4B5086;
+        }
+      }
+
+      .meta {
+        margin-left: 1rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #333;
+        transition: all 250ms ease;
+
+        .occupation {
+          font-weight: 100;
+          font-size: 0.8rem;
+          color: #999;
+        }
+      }
+
+      &:hover {
+        .meta {
+          color: black;
+        }
+      }
+    }
   }
 
 }

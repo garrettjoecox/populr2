@@ -1,9 +1,23 @@
-<div class="f1 homeV col">
+<div class="f1 homeV">
   <div class="jumbotron row jcc">
     <div class="contained">
       <span class="heading">Intelligent Social Metrics</span>
       <p>Populr.io takes data from top social networks and news sites to rank the movers and shakers of the internet. Updated periodically, Populr.io provides the latest on your favorite celebrities, athletes, and public figures.</p>
     </div>
   </div>
-  <span class="placeholder">Nothing here yet, check back later!</span>
+  <div ng-repeat="(list, users) in homeC.top" ng-if="users.length" class="list row jcc">
+    <div class="contained f1">
+      <span class="header row">{{list}}-list <span ng-if="$index === 0 && homeC.lastUpdated" class="since">Last updated {{homeC.lastUpdated}}</span></span>
+      <a ng-repeat="user in users" class="list-item row aic">
+        <div class="img" style="background-image: url({{user.info.image}})">
+          <span class="position row aic jcc">{{user.position}}</span>
+        </div>
+        <div class="meta col">
+          <span class="name">{{user.displayName}}</span>
+          <span class="occupation">{{user.info.occupation}}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <span class="placeholder row jcc" ng-if="!homeC.top.a.length">No Users</span>
 </div>

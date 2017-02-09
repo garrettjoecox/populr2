@@ -7,7 +7,7 @@
         <span class="occupation">{{userEditC.user.info.occupation}}</span>
       </div>
       <div class="actions row">
-        <button ng-click="userEditC.save()">Save</button>
+        <button ng-if="userEditC.dirty" ng-click="userEditC.save()">Save</button>
         <button class="delete" ng-click="userEditC.destroy()">Delete</button>
       </div>
     </div>
