@@ -1,5 +1,6 @@
 .homeV {
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
   max-height: calc(100vh - 4rem);
   @include breakpoint(phablet) {
     max-height: 100vh;

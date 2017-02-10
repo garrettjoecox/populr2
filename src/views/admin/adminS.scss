@@ -24,6 +24,7 @@
 
   .list {
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     margin: 0 1rem;
 
     max-height: calc(100vh - 7.5rem);
